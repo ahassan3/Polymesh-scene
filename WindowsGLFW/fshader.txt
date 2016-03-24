@@ -1,0 +1,13 @@
+#version 330 core
+
+// uniform value representing polygon color
+uniform vec4 polyColor;
+
+// color to use for fragment
+out vec4 finalColor;
+
+void main()
+{
+  finalColor = vec4(polyColor);
+}
+

@@ -1,0 +1,12 @@
+#version 330 core
+
+layout(location = 0) in vec3 vPosition;
+uniform mat4 projectionEyeMatrix;
+uniform mat4 objectMatrix;
+
+void main() 
+{
+  gl_Position = projectionEyeMatrix * objectMatrix * vec4(vPosition, 1);
+} 
+
+
